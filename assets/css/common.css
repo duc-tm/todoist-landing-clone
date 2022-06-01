@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.btn--primary:hover {
+  background-color: #ee5244;
+}

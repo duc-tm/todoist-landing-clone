@@ -1,0 +1,68 @@
+:root {
+  --container-padding: 32px;
+  --container-max-width: 1088px;
+  --container-padding-max-width: calc(1088px + (32px * 2));
+  --header-height: 64px;
+
+  --white-color: #fff;
+  --black-color: #1f1f1f;
+  --text-secondary-color: #575757;
+  --primary-color: #e44232;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Graphik Web", sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: #316fea;
+}
+
+button {
+  font-family: "Graphik Web", sans-serif;
+  border: none;
+  outline: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* font */
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("../fonts/Graphik-Regular-Web.woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("../fonts/Graphik-Medium-Web.woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Graphik Web";
+  src: url("../fonts/Graphik-Semibold-Web.woff");
+  font-weight: 600;
+}
