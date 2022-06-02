@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <script src="https://kit.fontawesome.com/aa78b5a4eb.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./assets/css/base.css">
@@ -13,7 +14,9 @@
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/home.css">
 
-  <title>Document</title>
+  <title>
+    Todoist | A To-Do List to Organize Your Work & Life
+  </title>
 </head>
 
 <body>
@@ -23,15 +26,88 @@
         <a href="/" class="logo-link">
           <img src="./assets/images/logo.svg" alt="todoist">
         </a>
-        <a href="/features" class="navbar__link">Features</a>
-        <a href="/templates" class="navbar__link">Templates</a>
-        <a href="/business" class="navbar__link">For Teams</a>
-        <div class="navbar__link">Resources</div>
-        <a href="/pricing" class="navbar__link">Pricing</a>
+        <ul>
+          <li>
+            <a href="/features" class="navbar__link">Features</a>
+          </li>
+          <li>
+            <a href="/templates" class="navbar__link">Templates</a>
+          </li>
+          <li>
+            <a href="/business" class="navbar__link">For Teams</a>
+          </li>
+          <li class="drop-menu-toggler">
+            <div class="navbar__link">
+              Resources
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="drop-menu">
+              <ul>
+                <li>
+                  <a href="">
+                    <div>
+                      Integrations
+                    </div>
+                    <p>
+                      Connect Todoist with tools like IFTTT, Alexa, Google Calendar, and more...
+                    </p>
+                  </a>
+                  <div class="divider"></div>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      Getting Started Guide
+                    </div>
+                    <p>
+                      Everything you need to know to get your Todoist up and running in minutes.
+                    </p>
+                  </a>
+                  <div class="divider"></div>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      Help Center
+                    </div>
+                    <p>
+                      Find answers to your questions and tips for getting the most out of your Todoist.
+                    </p>
+                  </a>
+                  <div class="divider"></div>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      Productivity Methods + Quiz
+                    </div>
+                    <p>
+                      Learn the most popular productivity methods and discover which one fits you best.
+                    </p>
+                  </a>
+                  <div class="divider"></div>
+                </li>
+                <li>
+                  <a href="">
+                    <div>
+                      Blog
+                    </div>
+                    <p>
+                      Productivity advice you won‘t find anywhere else, plus Todoist tips and product news.
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="/pricing" class="navbar__link">Pricing</a>
+          </li>
+        </ul>
       </div>
       <div class="navbar__right">
-        <a href="/auth/login" class="navbar__link">Log in</a>
-        <a href="/auth/signup" class="navbar__link">Sign up</a>
+        <a href="./login.html" class="navbar__link">Log in</a>
+        <a href="/auth/signup" class="btn btn--primary navbar__link-btn">Start for free</a>
       </div>
     </nav>
   </header>

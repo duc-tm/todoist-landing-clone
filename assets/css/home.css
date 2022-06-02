@@ -199,7 +199,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #e44232;
+  background-color: #e44232;
 }
 
 .section-more-info__list {
@@ -404,7 +404,7 @@
 }
 
 .footer__copy-right a {
-  border-right: 1px solid #DBD6D1;
+  border-right: 1px solid var(--divider-color);
   padding: 0 4px 0 5px;
   font-size: 1.2rem;
   font-weight: 400;

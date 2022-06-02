@@ -8,6 +8,7 @@
   --black-color: #1f1f1f;
   --text-secondary-color: #575757;
   --primary-color: #e44232;
+  --divider-color: #DBD6D1;
 }
 
 *, *::after, *::before {
@@ -45,6 +46,12 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.container {
+  max-width: var(--container-padding-max-width);
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 /* font */
