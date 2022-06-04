@@ -1,3 +1,5 @@
+/* component */
+
 .btn {
   display: inline-block;
   border-radius: 10px;
@@ -14,6 +16,12 @@
 
 .btn--primary:hover {
   background-color: #ee5244;
+}
+
+.btn-outlined {
+  border: 1px solid var(--divider-color);
+  color: var(--black-color);
+  background-color: var(--white-color);
 }
 
 .password-toggle {
@@ -35,4 +43,23 @@
 .password-toggle img {
   width: 24px;
   height: 24px;
+}
+
+
+/* utilities */
+
+.h-full {
+  height: 100%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
 }

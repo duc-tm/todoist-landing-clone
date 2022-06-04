@@ -1,0 +1,19 @@
+@media (max-width: 959px) {
+  .navbar__left {
+    display: none;
+  }
+
+  .navbar-collapse-btn {
+    display: flex;
+  }
+}
+
+@media (max-width: 740px) {
+  .navbar {
+    justify-content: flex-end;
+  }
+
+  .navbar__right {
+    display: none;
+  }
+}

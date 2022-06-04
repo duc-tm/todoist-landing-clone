@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./assets/css/common.css">
   <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/home.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 
   <title>
     Todoist | A To-Do List to Organize Your Work & Life
@@ -21,95 +22,159 @@
 
 <body>
   <header class="header">
-    <nav class="navbar">
-      <div class="navbar__left">
-        <a href="/" class="logo-link">
-          <img src="./assets/images/logo.svg" alt="todoist">
-        </a>
-        <ul>
-          <li>
-            <a href="/features" class="navbar__link">Features</a>
-          </li>
-          <li>
-            <a href="/templates" class="navbar__link">Templates</a>
-          </li>
-          <li>
-            <a href="/business" class="navbar__link">For Teams</a>
-          </li>
-          <li class="drop-menu-toggler">
-            <div class="navbar__link">
-              Resources
-              <i class="fa-solid fa-chevron-down"></i>
-            </div>
-            <div class="drop-menu">
-              <ul>
-                <li>
-                  <a href="">
-                    <div>
+    <div class="wrapper">
+      <a href="/" class="logo-link">
+        <img src="./assets/images/logo.svg" alt="todoist">
+      </a>
+      <nav class="navbar">
+        <div class="navbar__left">
+          <ul>
+            <li>
+              <a href="./feature.html" class="navbar__link">Features</a>
+            </li>
+            <li>
+              <a href="./template.html" class="navbar__link">Templates</a>
+            </li>
+            <li>
+              <a href="./business.html" class="navbar__link">For Teams</a>
+            </li>
+            <li class="drop-menu-toggler">
+              <div class="navbar__link">
+                Resources
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="drop-menu">
+                <ul>
+                  <li>
+                    <a href="./integration.html">
+                      <div>
+                        Integrations
+                      </div>
+                      <p>
+                        Connect Todoist with tools like IFTTT, Alexa, Google Calendar, and more...
+                      </p>
+                    </a>
+                    <div class="divider"></div>
+                  </li>
+                  <li>
+                    <a href="./getting-started.html">
+                      <div>
+                        Getting Started Guide
+                      </div>
+                      <p>
+                        Everything you need to know to get your Todoist up and running in minutes.
+                      </p>
+                    </a>
+                    <div class="divider"></div>
+                  </li>
+                  <li>
+                    <a href="./help.html">
+                      <div>
+                        Help Center
+                      </div>
+                      <p>
+                        Find answers to your questions and tips for getting the most out of your Todoist.
+                      </p>
+                    </a>
+                    <div class="divider"></div>
+                  </li>
+                  <li>
+                    <a href="./productivity-method.html">
+                      <div>
+                        Productivity Methods + Quiz
+                      </div>
+                      <p>
+                        Learn the most popular productivity methods and discover which one fits you best.
+                      </p>
+                    </a>
+                    <div class="divider"></div>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div>
+                        Blog
+                      </div>
+                      <p>
+                        Productivity advice you won‘t find anywhere else, plus Todoist tips and product news.
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./pricing.html" class="navbar__link">Pricing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar__right">
+          <a href="./login.html" class="navbar__link">Log in</a>
+          <a href="./register.html" class="btn btn--primary navbar__link-btn">Start for free</a>
+        </div>
+        <button type="button" class="btn navbar-collapse-btn" id="navbar-collapse-btn">
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div class="navbar-mobile" id="navbar-collapse">
+          <ul>
+            <li>
+              <a href="./feature.html" class="navbar__link">Features</a>
+            </li>
+            <li>
+              <a href="./template.html" class="navbar__link">Templates</a>
+            </li>
+            <li>
+              <a href="./business.html" class="navbar__link">For Teams</a>
+            </li>
+            <li class="accordion" id="header-accordion">
+              <div class="navbar__link accordion-toggler" id="accordion-toggler">
+                Resources
+                <i class="fa-solid fa-chevron-down"></i>
+              </div>
+              <div class="accordion-body">
+                <ul>
+                  <li>
+                    <a href="./integration.html" class="accordion-item">
                       Integrations
-                    </div>
-                    <p>
-                      Connect Todoist with tools like IFTTT, Alexa, Google Calendar, and more...
-                    </p>
-                  </a>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a href="">
-                    <div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./getting-started.html" class="accordion-item">
                       Getting Started Guide
-                    </div>
-                    <p>
-                      Everything you need to know to get your Todoist up and running in minutes.
-                    </p>
-                  </a>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a href="">
-                    <div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./help.html" class="accordion-item">
                       Help Center
-                    </div>
-                    <p>
-                      Find answers to your questions and tips for getting the most out of your Todoist.
-                    </p>
-                  </a>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a href="">
-                    <div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="./productivity-method.html" class="accordion-item">
                       Productivity Methods + Quiz
-                    </div>
-                    <p>
-                      Learn the most popular productivity methods and discover which one fits you best.
-                    </p>
-                  </a>
-                  <div class="divider"></div>
-                </li>
-                <li>
-                  <a href="">
-                    <div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="accordion-item">
                       Blog
-                    </div>
-                    <p>
-                      Productivity advice you won‘t find anywhere else, plus Todoist tips and product news.
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </li>
-          <li>
-            <a href="/pricing" class="navbar__link">Pricing</a>
-          </li>
-        </ul>
-      </div>
-      <div class="navbar__right">
-        <a href="./login.html" class="navbar__link">Log in</a>
-        <a href="/auth/signup" class="btn btn--primary navbar__link-btn">Start for free</a>
-      </div>
-    </nav>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="./pricing.html" class="navbar__link">Pricing</a>
+            </li>
+            <div class="padding"></div>
+            <li>
+              <a href="./login.html" class="btn btn-outlined navbar__link-btn">Log in</a>
+            </li>
+            <li>
+              <a href="./register.html" class="btn btn--primary navbar__link-btn">Start for free</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main">
     <section class="section-intro">
@@ -481,6 +546,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./assets/js/header.js"></script>
 </body>
 
 </html>
