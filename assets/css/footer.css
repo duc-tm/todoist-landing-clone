@@ -1,0 +1,119 @@
+.footer {
+  background-color: var(--background-color, #FFF9F3);
+}
+
+.footer .wrapper {
+  max-width: var(--container-padding-max-width);
+  padding: var(--container-padding);
+  padding-bottom: 48px;
+  padding-top: 64px;
+  margin: 0 auto;
+}
+
+.footer > .wrapper {
+  border-top: 1px solid #DBD6D1;
+}
+
+.footer__logo {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.footer__invite-message {
+  margin-bottom: 32px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer__list-social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social-item a {
+  color: #8d8a86;
+}
+
+.footer__social-item a:hover {
+  color: var(--text-secondary-color);
+}
+
+.footer__social-item svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer h4 {
+  margin-bottom: 24px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.footer__nav li {
+  margin-bottom: 16px;
+}
+
+.footer__nav li a {
+  color: var(--black-color);
+}
+
+.footer__nav li a:hover {
+  text-decoration: underline;
+}
+
+.footer__copy-right {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.footer__copy-right .wrapper {
+  padding: 18px var(--container-padding);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__copy-right a {
+  border-right: 1px solid var(--divider-color);
+  padding: 0 4px 0 5px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.footer__copy-right a:hover {
+  text-decoration: underline;
+}
+
+.footer__copy-right .copy-right {
+  margin-left: 16px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+}
+
+.custom-select {
+  position: relative;
+}
+
+.language-select {
+  min-width: 160px;
+  padding: 8px 24px 8px 32px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-secondary-color);
+  background-color: var(--background-color);
+  filter: brightness(0.9);
+}
+
+.custom-select svg {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary-color);
+}

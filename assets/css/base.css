@@ -24,6 +24,8 @@ html {
 body {
   font-family: "Graphik Web", sans-serif;
   font-size: 1.6rem;
+  color: var(--black-color);
+  overflow-x: hidden;
 }
 
 a {
@@ -50,6 +52,7 @@ ul {
 
 .container {
   max-width: var(--container-padding-max-width);
+  width: 100%;
   padding: 0 32px;
   margin: 0 auto;
 }
